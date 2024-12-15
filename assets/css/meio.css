@@ -1,0 +1,341 @@
+
+.meio {
+    height: auto;  
+    width: 100vw;  
+    margin-top: 110px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+header nav {
+    position: fixed;
+    z-index: 5; 
+}
+
+.mobile-menu {
+    z-index: 9; 
+}
+
+.caixa1 form{
+    width: 350px;
+    background: #FFFFFF;
+    height: 450px;
+    border-top: 10px solid #FF9C12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 230px;
+    
+    
+}
+
+button, input, textarea {
+    transition: all 0.3s ease;
+}
+
+.caixa1 form p{
+    color: #FF9C38;
+    font-size: 30px;
+}
+.caixa1 input{
+    height:50px;
+    width:300px;
+    border-radius: 8px;
+    justify-content: space-between;
+    margin: 10px;
+    outline: none;
+}
+
+.caixa1 input:focus{
+    border-color:#FF9C38;
+    box-shadow: 0 0 5px #FF9C38;
+}
+
+.caixa1 button{
+    background-color:#FCA315;
+    width:150px;
+    height: 50px;
+    border-radius: 8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: #FFFFFF;
+    font-size: 20px;
+    
+    
+}
+
+.caixa1 textarea{
+    height: 150px;
+    border-radius: 8px;
+    margin:10px;
+    width:300px;
+    outline: none;
+}
+
+.caixa1 textarea:focus{
+    border-color:#FF9C38;
+    box-shadow: 0 0 5px #FF9C38;
+}
+.meio h1 {
+    font-size: 40px;
+    margin-bottom: 25px; /* Para garantir espaço abaixo do título */
+}
+
+.icon img{
+    width: 40px
+}
+.icon img, .paragrafo{
+    display: inline-block;
+    vertical-align: middle;
+}
+.meio p {
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.missao{    
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between;  
+    background:#E7ECED;
+    width:100%;
+    min-height: 600px;
+    
+}
+
+.missao p{
+    color:#FCA315;
+    font-size: 45px;
+    
+}
+
+.missao .textos{
+    margin-top: 80px;
+    margin-right: 300px;
+    
+}
+
+.missao .textos .img img{
+
+    width: 100px;
+    
+}
+
+footer{
+    background: #23232e;
+    color: #f8f9fa;
+    text-align: center;
+    padding:15px;    
+    bottom: 0;
+    width: 100%;
+    border-top: 10px solid #FF9C12;
+    
+}
+
+
+
+.missao #gomestek{
+    color:#15334D;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;  
+    gap: 16px;
+    width: 100%;  
+    max-width: 1200px; 
+    margin: 0 auto; 
+    
+}
+
+.red {
+    padding: 10px; 
+    flex: 1 1 200px;  /* Permite que a div se redimensione de forma flexível */
+    height: 350px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.red img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease
+}
+
+.red img:hover{
+    transform: scale(1.1);
+    
+}
+.orange {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px; 
+    padding: 10px;
+}
+
+#desenvolvimento{
+    font-size: 25px;
+}
+
+.orange .text{
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 1.9;
+
+}
+
+#devW{
+    background-color: #FF9C12;
+}
+
+.botons button{
+    
+    border-radius: 5px;
+    padding: 10px;
+    color: #565E64;
+    width: 250px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 20PX ;
+    font-family: poppins;
+}
+
+.botons button:hover{
+    background: #FFD08A;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.botons button hr{
+    margin-bottom: 20px;
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .meio {
+        margin-top: 20px; 
+    }
+
+    .container {
+        flex-direction: column;  
+        align-items: center;  
+    }
+
+    .red, .orange {
+        width: 90%;  
+        height: auto; /* Permite que a altura se ajuste conforme o conteúdo */
+    }
+
+    .red img {
+        width: 100%;  
+    }
+
+    .meio p {
+        font-size: 15px;
+        padding: 10px;
+    
+    }
+    .missao {
+        flex-direction: column; 
+        justify-content: center; 
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .missao p {
+        font-size: 24px; 
+        text-align: center; 
+    }
+
+    .missao .textos {
+        margin-top: 20px;
+        margin-right: 0; 
+        text-align: center; 
+
+        
+    }
+
+    .missao .textos .img img {
+        width: 40px; 
+    }
+
+    .icon img{
+        width: 25px
+    }
+
+
+.caixa1 form{
+    width: 200px;
+    background: #FFFFFF;
+    height: 275px;
+    border-top: 5px solid #FF9C12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    
+}
+
+.caixa1 input{
+    height:25px;
+    width:150px;
+    border-radius: 4px;
+    justify-content: space-between;
+    margin: 5px;
+    outline: none;
+}
+
+.caixa1 textarea{
+    height: 75px;
+    border-radius: 4px;
+    margin:5px;
+    width:150px;
+    outline: none;
+}
+
+
+
+footer{
+    
+    padding:7px;    
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #FF9C12;
+    
+}
+    
+.caixa1 button{    
+    width:75px;
+    height: 25px;
+    border-radius: 4px;    
+    font-size: 10px;
+    
+    
+}
+
+.botons button {
+    width: 100%; 
+    font-size: 18px; 
+    padding: 12px; 
+    margin-bottom: 15px; 
+}
+
+
+}

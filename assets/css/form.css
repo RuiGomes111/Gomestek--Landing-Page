@@ -1,0 +1,8 @@
+#confirmacao.hidden {
+    display: none;
+}
+
+#confirmacao p{
+    text-align: center;
+    justify-content: center;
+}
