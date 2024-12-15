@@ -19,7 +19,7 @@ function trafegoEvt(){
     ajudando empresas a alcançar mais clientes e crescer no ambiente digital. Com estratégias 
     focadas em resultados, criamos campanhas personalizadas que posicionam sua marca no topo e aumentam suas conversões` 
 
-    img.src="/project/img/trafego.webp"
+    img.src="/assets/img/trafego.webp"
 }
 
 devW.addEventListener("click", dvwEvent)
@@ -30,7 +30,7 @@ function dvwEvent(){
     hardware.setAttribute("style", "background: none");
     consultoria.setAttribute("style", "background: none");
     desenvolvimento.textContent= `Criação de sites / Páginas web`;
-     img.src="/project/img/ex.webp";
+     img.src="/assets/img/ex.webp";
     paragrafo.textContent=`Nossa empresa é especializada no desenvolvimento de páginas e sites web, 
                         oferecendo soluções completas para empresas e profissionais que desejam ter uma presença forte e 
                         impactante no ambiente digital. <br>
@@ -48,7 +48,7 @@ function hardwareEvent(){
     trafego.setAttribute("style", "background: none");
     hardware.setAttribute("style", "background: #FF9C12");
     desenvolvimento.textContent= ` Hardware / Software & Redes`;
-    img.src="/project/img/hardware1.webp";
+    img.src="/assets/img/hardware1.webp";
     paragrafo.textContent=`
 Na GomesTek, somos especializados em oferecer serviços de qualidade e confiança na reparação e manutenção de computadores 
 e em soluções completas para redes. 
@@ -63,7 +63,7 @@ function consultoriaEvent(){
     hardware.setAttribute("style", "background: none");
     consultoria.setAttribute("style", "background: #FF9C12");
     desenvolvimento.textContent= `Consultoria DE Compras On-line`;
-    img.src="/project/img/mentoria.webp";
+    img.src="/assets/img/mentoria.webp";
     paragrafo.textContent=`Facilitamos o acesso a oportunidades globais, ajudando nossos clientes a importar e exportar com eficiência, segurança e economia.`
 }
 
