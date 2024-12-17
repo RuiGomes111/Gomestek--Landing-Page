@@ -20,6 +20,9 @@ header nav {
     z-index: 9; 
 }
 
+.caixa1{
+    margin: 40px auto;
+}
 .caixa1 form{
     width: 350px;
     background: #FFFFFF;
@@ -31,7 +34,7 @@ header nav {
     align-items: center;
     margin-top: 40px;
     margin-left: 230px;
-    
+    margin: 20px auto;  
     
 }
 
@@ -59,7 +62,7 @@ button, input, textarea {
 
 .caixa1 button{
     background-color:#FCA315;
-    width:150px;
+    width:300px;
     height: 50px;
     border-radius: 8px;
     display:flex;
@@ -111,14 +114,10 @@ button, input, textarea {
     background: #FFFFFF;
     width: 100vw;
     min-height: 600px;
-    border-top:  solid #152634
-    
+    border-top:  solid #152634;
+        
 }
-#contact{
-    margin-top: 160px;
-    border-top: 7px solid #152634;
 
-}
 .missao p{
     color: #152634;
     font-size: 45px;
@@ -256,7 +255,7 @@ footer ul li{
 
     .red, .orange {
         width: 90%;  
-        height: auto; /* Permite que a altura se ajuste conforme o conteúdo */
+        height: auto; 
     }
 
     .red img {
@@ -270,13 +269,15 @@ footer ul li{
     }
     .meio h1{
         font-size: 20px;
-       
+
     }
     .missao {
-        flex-direction: column; 
-        justify-content: center; 
+        display: flex;
+        flex-direction: column; /* Alinha os itens verticalmente */
+        align-items: center;    /* Centraliza horizontalmente */
+        gap: 20px;
+        flex-direction: column;         
         height: auto; 
-    
         width:100%;
     }
 
@@ -306,19 +307,20 @@ footer ul li{
     }
 
 .caixa1{
-    width:100%
+    width:100%;
+
 }
+
+
+
 .caixa1 form{
     width: 200px;
     background: #FFFFFF;
-    height: 275px;
-    border-top: 5px solid #FF9C12;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    height: auto;
+    border-top:  solid #152634;     
+    margin-top: 1px;
     margin-left: 100px;
+    
     
 }
 
@@ -351,7 +353,7 @@ footer{
 }
     
 .caixa1 button{    
-    width:75px;
+    width:100%;
     height: 25px;
     border-radius: 4px;    
     font-size: 10px;
@@ -370,10 +372,3 @@ footer{
 }
 
 
-@media(max-width: 375px){
-    .caixa1 form{
-        
-        margin-left: 50px;
-        
-    }
-}
