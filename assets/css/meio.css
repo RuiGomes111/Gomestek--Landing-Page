@@ -2,13 +2,13 @@
 .meio {
     height: auto;  
     width: 100vw;  
-    margin-top: 110px; 
+    margin-top: 1px; 
     display: flex;
     flex-direction: column; 
     align-items: center;
     justify-content: center;
     padding: 20px;
-    
+
 }
 
 header nav {
@@ -24,7 +24,7 @@ header nav {
     width: 350px;
     background: #FFFFFF;
     height: 450px;
-    border-top: 10px solid #FF9C12;
+    border-top:  solid #152634;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,7 +70,10 @@ button, input, textarea {
     
     
 }
-
+.caixa1 button:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
 .caixa1 textarea{
     height: 150px;
     border-radius: 8px;
@@ -105,14 +108,19 @@ button, input, textarea {
     display: flex;
     flex-wrap: wrap;  
     justify-content: space-between;  
-    background:#E7ECED;
-    width:100%;
+    background: #FFFFFF;
+    width: 100vw;
     min-height: 600px;
+    border-top:  solid #152634
     
 }
+#contact{
+    margin-top: 160px;
+    border-top: 7px solid #152634;
 
+}
 .missao p{
-    color:#FCA315;
+    color: #152634;
     font-size: 45px;
     
 }
@@ -127,19 +135,27 @@ button, input, textarea {
 
     width: 100px;
     
+    
+}
+.missao .textos .img img:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
 }
 
 footer{
-    background: #23232e;
+    background: #23232E;
     color: #f8f9fa;
     text-align: center;
     padding:15px;    
     bottom: 0;
-    width: 100%;
-    border-top: 10px solid #FF9C12;
+    width: 100vw;
+    border-top: 7px solid #152634;
     
 }
 
+footer ul li{
+    list-style: none;
+}
 
 
 .missao #gomestek{
@@ -225,10 +241,12 @@ footer{
 }
 
 
+
+
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     .meio {
-        margin-top: 20px; 
+        margin-top: 10px; 
     }
 
     .container {
@@ -250,16 +268,24 @@ footer{
         padding: 10px;
     
     }
+    .meio h1{
+        font-size: 20px;
+       
+    }
     .missao {
         flex-direction: column; 
         justify-content: center; 
         height: auto; 
-        padding: 20px; 
+    
+        width:100%;
     }
 
-    .missao p {
-        font-size: 24px; 
-        text-align: center; 
+    .textos h1  {
+        display: none;
+    }
+
+    .textos p{
+        display: none;
     }
 
     .missao .textos {
@@ -272,13 +298,16 @@ footer{
 
     .missao .textos .img img {
         width: 40px; 
+        display: none;
     }
 
     .icon img{
         width: 25px
     }
 
-
+.caixa1{
+    width:100%
+}
 .caixa1 form{
     width: 200px;
     background: #FFFFFF;
@@ -295,7 +324,7 @@ footer{
 
 .caixa1 input{
     height:25px;
-    width:150px;
+    width:100%;
     border-radius: 4px;
     justify-content: space-between;
     margin: 5px;
@@ -306,7 +335,7 @@ footer{
     height: 75px;
     border-radius: 4px;
     margin:5px;
-    width:150px;
+    width:100%;
     outline: none;
 }
 
@@ -317,7 +346,7 @@ footer{
     padding:7px;    
     bottom: 0;
     width: 100%;
-    border-top: 5px solid #FF9C12;
+    
     
 }
     
@@ -338,4 +367,13 @@ footer{
 }
 
 
+}
+
+
+@media(max-width: 375px){
+    .caixa1 form{
+        
+        margin-left: 50px;
+        
+    }
 }

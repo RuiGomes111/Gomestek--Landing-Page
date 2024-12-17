@@ -17,34 +17,33 @@ html {
 
 body{
     height: 100vh;
-    width: 99vw;
+    width: 100%;
 }
 
-#qualidade{
-    margin-top: 30px;
-    font-size: 40px;
 
-}
 
 #qualidade #apre a{
     color: #CDA5A0;
 }
 
 #qualidade #apre a:hover{
-    color:#000;
+    color:#E45E2E;
 }
 
 
 #qualidade {
-    color: #CDA5A0;
+    color: #0B9ABA;        
+    margin-top: 10px;  
+    font-size: 40px;
 }
 
 #home{
     padding: 130px;
     font-size: 38px;
-    margin-bottom: 50px;
+    margin-bottom: 50px;    
     font-family: "Poppins", sans-serif;
     cursor: pointer;
+
 }
 
 a {
@@ -74,10 +73,13 @@ img {
     height: auto;
 }
 main {
-    background: #333 url("/assets/img/stylish-good-looking-female-tourist-with-dark-skin-afro-hairstyle-checking-glasses-eyes-turning-while-standing-profile-gray-wall.webp") no-repeat center center;
+    background:  url("/assets/img/8.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
+    color: #fff;
+
 }
+
 
 
 .nav-list {
@@ -155,16 +157,84 @@ main {
     }
     #home{
         padding: 24px;
-        padding-top: 550px;
-        font-size: 16.5px;
+        padding-top: 450px;
+        font-size: 12.5px;
         margin-bottom: 25px;
-       
+    
         flex-wrap: wrap;
     }
     #qualidade{
-   
+
         margin-top: 30px;
         font-size: 19px;
+        color: #CDA5A0;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 60vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+ 
+
+    
+    .nav-list li {
+        margin-left: 0;
+        opacity: 1;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list.active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    .mobile-menu.active .line2 {
+        opacity: 0;
+    }
+    .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    img {
+        width: 180px;  /* Ajuste de tamanho da imagem para telas pequenas */
+        height: auto;
+    }
+
+    #home {
+        padding: 15px;
+        padding-top: 460px;
+        font-size: 12.5px;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+    }
+    
+
+    #qualidade {
+        margin-top: 20px;
+        font-size: 18px;
         color: #CDA5A0;
     }
 }
