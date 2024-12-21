@@ -22,11 +22,11 @@ body{
 
 
 
-#qualidade #apre a{
+.qualidade #apre a{
     color: #CDA5A0;
 }
 
-#qualidade #apre a:hover{
+.qualidade #apre a:hover{
     color:#E45E2E;
 }
 
@@ -43,7 +43,7 @@ body{
     margin-bottom: 50px;    
     font-family: "Poppins", sans-serif;
     cursor: pointer;
-    overflow: hidden;
+    
 
 }
 
@@ -180,6 +180,7 @@ main #foto{
         font-size: 12.5px;
         margin-bottom: 25px;
         flex-wrap: wrap;
+    
     }
     #home img{
         height: auto;
@@ -190,53 +191,47 @@ main #foto{
 
         margin-top: 30px;
         font-size: 19px;
-       
+
     }
+
+    
 }
 
 @media screen and (max-width: 480px) {
     nav {
-      padding: 10px;
+        padding: 10px;
     }
-  
+
     img {
-      width: 150px; 
-  
+        width: 150px; 
+
     main {
-      padding: 10px; 
+        padding: 10px; 
     }
-  
+
     main img {
-      width: 100%; 
+        width: 100%; 
     }
-  
+
     #home {
-      font-size: 20px; 
-      padding: 10px;
-      
-    }
-  
-    .qualidade {
-      font-size: 24px;
-    }
-  
-    .qualidade #apre a {
-      font-size: 14px; 
-    }
-  
-    .mobile-menu div {
-      width: 30px; 
-      height: 2px;
-    }
-    main #foto{
-        background-color: #FF9C12;
-        width: 150px;
-        height: auto;
-    }
-
-    main img{
-
-        display: none;
-    }
+        font-size: 20px; 
+        padding: 10px;
     
-  }}
+    }
+
+    .qualidade {
+        font-size: 24px;
+    }
+
+    .qualidade #apre a {
+        font-size: 14px; 
+    }
+
+    .mobile-menu div {
+        width: 30px; 
+        height: 2px;
+    }
+
+    
+    
+}}
