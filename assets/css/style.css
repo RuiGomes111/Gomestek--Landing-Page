@@ -43,11 +43,13 @@ body{
     margin-bottom: 50px;    
     font-family: "Poppins", sans-serif;
     cursor: pointer;
+    overflow: hidden;
 
 }
 
 #home img{
     display: none;
+    
 }
 
 a {
