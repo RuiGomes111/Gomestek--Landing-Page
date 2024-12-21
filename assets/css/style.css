@@ -131,13 +131,16 @@ main #foto {
         transform: translateX(100vw);
         transition: transform 0.3s ease-in;
         display: none;
+        opacity: 0;
+        pointer-events: none
+    }
+    .nav-list.active {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: all; /* Permite interação quando visível */
     }
 
-    .nav-list li {
-        margin-left: 0;
-        opacity: 1;
-        transition: opacity 0.5s ease, transform 0.5s ease;
-    }
+    
 
     .mobile-menu {
         display: block;
