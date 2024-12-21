@@ -45,8 +45,7 @@ body {
 }
 #home h1, p{
     margin-top: 70px;
-   
-    
+
 }
 #home img {
     display: none;
@@ -206,7 +205,10 @@ main #foto {
         margin-bottom: 25px;
         flex-wrap: wrap;
     }
-
+    #home h1, p{
+        margin-top: 10px;
+    
+    }
     #home img {
         height: auto;
         display: block;
@@ -259,7 +261,10 @@ main #foto {
         font-size: 20px;
         padding: 10px;
     }
-
+    #home h1, p{
+        margin-top: 10px;
+    
+    }
     .qualidade {
         font-size: 24px;
     }
