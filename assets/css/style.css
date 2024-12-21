@@ -6,50 +6,45 @@
 html {
     scroll-behavior: smooth;
 }
-#serv{
+#serv {
     border: 1.2px solid white;
 }
 
-#apre{
+#apre {
     border: 1.2px solid black;
     border-radius: 10px;
 }
 
-body{
+body {
     height: 100vh;
     width: 100%;
+    overflow-x:hidden;
 }
 
-
-
-.qualidade #apre a{
+.qualidade #apre a {
     color: #CDA5A0;
 }
 
-.qualidade #apre a:hover{
-    color:#E45E2E;
+.qualidade #apre a:hover {
+    color: #E45E2E;
 }
 
-
 .qualidade {
-    color: #FF9C12;        
-    margin-top: 10px;  
+    color: #FF9C12;
+    margin-top: 10px;
     font-size: 40px;
 }
 
-#home{
+#home {
     padding: 130px;
     font-size: 38px;
-    margin-bottom: 50px;    
+    margin-bottom: 50px;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
-    
-
 }
 
-#home img{
+#home img {
     display: none;
-    
 }
 
 a {
@@ -62,38 +57,36 @@ a:hover {
     opacity: 0.7;
 }
 
-
-
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background: #23232e;
     height: 8vh;
-    position:fixed;
-    width:100%
+    position: fixed;
+    width: 100%;
 }
 
 img {
     width: 250px;
     height: auto;
 }
+
 main {
     display: flex;
     background: #232323;
     background-size: cover;
     height: 100vh;
     color: #fff;
-
 }
 
-main img{
+main img {
     margin-top: 300px;
     width: 500px;
     height: 500px;
 }
 
-main #foto{
+main #foto {
     background-color: #FF9C12;
     width: 300px;
     height: auto;
@@ -102,6 +95,7 @@ main #foto{
 .nav-list {
     list-style: none;
     display: flex;
+    
 }
 
 .nav-list li {
@@ -122,9 +116,6 @@ main #foto{
     transition: transform 0.3s, opacity 0.3s;
 }
 
-
-
-
 /* Responsividade */
 @media (max-width: 999px) {
     .nav-list {
@@ -137,8 +128,9 @@ main #foto{
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        transform: translateX(100%);
+        transform: translateX(100vw);
         transition: transform 0.3s ease-in;
+        display: none;
     }
 
     .nav-list li {
@@ -163,9 +155,11 @@ main #foto{
     .mobile-menu.active .line1 {
         transform: rotate(-45deg) translate(-8px, 8px);
     }
+
     .mobile-menu.active .line2 {
         opacity: 0;
     }
+
     .mobile-menu.active .line3 {
         transform: rotate(45deg) translate(-5px, -7px);
     }
@@ -174,27 +168,38 @@ main #foto{
         width: 200px;
         height: auto;
     }
-    #home{
+
+    #home {
         padding: 24px;
         padding-top: 50px;
         font-size: 12.5px;
         margin-bottom: 25px;
         flex-wrap: wrap;
-    
     }
-    #home img{
+
+    #home img {
         height: auto;
         display: block;
         margin-top: 0px;
     }
-    .qualidade{
 
+    .qualidade {
         margin-top: 30px;
         font-size: 19px;
-
     }
 
-    
+    main #foto {
+        background-color: #FF9C12;
+        width: 100%;
+        height: auto;
+    }
+    main #foto img{
+        display: none;
+    }
+
+    #last{
+        margin-top: 1px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -202,21 +207,26 @@ main #foto{
         padding: 10px;
     }
 
+    .nav-list {
+        display: flex;
+        transform: translateX(100vw)
+    }
+
     img {
-        width: 150px; 
+        width: 150px;
+    }
 
     main {
-        padding: 10px; 
+        padding: 10px;
     }
 
     main img {
-        width: 100%; 
+        width: 100%;
     }
 
     #home {
-        font-size: 20px; 
+        font-size: 20px;
         padding: 10px;
-    
     }
 
     .qualidade {
@@ -224,14 +234,21 @@ main #foto{
     }
 
     .qualidade #apre a {
-        font-size: 14px; 
+        font-size: 14px;
     }
 
     .mobile-menu div {
-        width: 30px; 
+        width: 30px;
         height: 2px;
     }
 
-    
-    
-}}
+    main #foto {
+        background-color: #FF9C12;
+        width: 100%;
+        height: auto;
+    }
+
+    main #foto img{
+        display: none;
+    }
+}
