@@ -38,12 +38,16 @@ body {
 
 #home {
     padding: 130px;
-    font-size: 38px;
+    font-size: 37px;
     margin-bottom: 50px;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
 }
-
+#home h1, p{
+    margin-top: 70px;
+   
+    
+}
 #home img {
     display: none;
 }
@@ -96,20 +100,14 @@ main #foto {
 
 .nav-list {
     list-style: none;
-    display: flex;
-    opacity: 0;
-    pointer-events: none;
-    position: fixed; /* Garante que a posição é em relação ao viewport */
+    display: flex;   
     top: 0;
     right: 0;
-    width: 50vw; /* Ajustável */
-    height: 100vh; /* Ocupa toda a altura da tela */
+    width: 50vw; /* Ajustável */    
     background: #23232e;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    transform: translateX(100vw); /* Totalmente fora da tela */
+    justify-content: space-around;   
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -162,7 +160,14 @@ main #foto {
         pointer-events: all; /* Permite interação quando visível */
     }
 
+    header nav {
+        position: fixed;
+        z-index: 5; 
+    }
     
+    .mobile-menu {
+        z-index: 9; 
+    }
 
     .mobile-menu {
         display: block;
