@@ -91,7 +91,7 @@ button, input, textarea {
 }
 .meio h1 {
     font-size: 40px;
-    margin-bottom: 25px; /* Para garantir espaço abaixo do título */
+    margin-bottom: 25px; 
 }
 
 .icon img{
@@ -114,31 +114,46 @@ button, input, textarea {
     background: #FFFFFF;
     width: 100vw;
     min-height: 600px;
-    border-top:  solid #152634;
+    border-top:  solid #152634;   
         
 }
 
-.missao p{
-    color: #152634;
-    font-size: 45px;
+
+.missao div{
+    font-size: 18px;
+    line-height: 1.5; 
+    text-align:left;
+}
+
+.missao .textos h2{
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+.missao .textos{    
+    margin-top: 70px;
+    width: 800px;
+    color: black;
+    margin-right: 150px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     
 }
 
-.missao .textos{
+
+.textos .conta a{
+    color: black;
+}
+
+.textos .conta p{
     margin-top: 80px;
-    margin-right: 300px;
-    
-}
-
-.missao .textos .img img{
-
-    width: 100px;
-    
-    
-}
-.missao .textos .img img:hover{
-    transform: scale(1.05);
-    transition: transform 0.2s ease-in-out;
+    font-size: 15px;      
 }
 
 footer{
@@ -155,12 +170,6 @@ footer{
 footer ul li{
     list-style: none;
 }
-
-
-.missao #gomestek{
-    color:#15334D;
-}
-
 
 
 .container {
@@ -273,34 +282,43 @@ footer ul li{
     }
     .missao {
         display: flex;
-        flex-direction: column; /* Alinha os itens verticalmente */
+        flex-direction: column;        
         align-items: center;    /* Centraliza horizontalmente */
-        gap: 20px;
-        flex-direction: column;         
+        gap: 20px;      
         height: auto; 
         width:100%;
+        
     }
 
     .textos h1  {
         display: none;
     }
 
-    .textos p{
-        display: none;
+    
+        .textos .conta p{
+            margin-top: 40px;
+            font-size: 10px;      
+        }
+    
+
+
+    .missao .textos{    
+        margin-top: 7px;
+        width: 450px;
+    
     }
 
-    .missao .textos {
-        margin-top: 20px;
-        margin-right: 0; 
-        text-align: center; 
-
-        
+    .missao div{
+        font-size: 13px;
+        line-height: 1.5; 
+        text-align:left;
+    }
+    
+    .missao .textos h2{
+        font-size: 15px;
+        margin-bottom: 12px;
     }
 
-    .missao .textos .img img {
-        width: 40px; 
-        display: none;
-    }
 
     .icon img{
         width: 25px
@@ -369,6 +387,86 @@ footer{
 }
 
 
+
+
 }
 
 
+/* Responsividade para telas de até 480px (smartphones pequenos) */
+@media screen and (max-width: 480px) {
+    .meio {
+        padding: 10px;
+    }
+
+    header nav {
+        position: relative;
+    }
+
+    .caixa1 form {
+        width: 100%; 
+        margin: 20px auto; 
+        padding: 15px; 
+    }
+
+    .caixa1 input,
+    .caixa1 textarea,
+    .caixa1 button {
+        width: 100%; 
+        font-size: 16px; 
+    }
+
+    .caixa1 p {
+        font-size: 24px; 
+        text-align: center;
+    }
+
+    .missao {
+        flex-direction: column; 
+        padding: 10px;
+        min-height: auto; 
+    }
+
+    .missao .textos {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 14px; 
+        padding: 10px; 
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px; 
+        font-size: 12px; 
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .red, .orange {
+    flex: 1 1 100%;
+    height: auto;
+    }
+
+    .red img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .botons button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px; 
+    }
+
+    .meio h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .meio p {
+        font-size: 16px; 
+    }
+}
