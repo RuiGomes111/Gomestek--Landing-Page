@@ -1,0 +1,469 @@
+
+
+.meio {
+    height: auto;  
+    width: 100vw;  
+    margin-top: 1px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+
+
+.caixa1{
+    margin: 40px auto;
+}
+.caixa1 form{
+    width: 350px;
+    background: #FFFFFF;
+    height: 450px;
+    border-top:  solid #152634;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 230px;
+    margin: 20px auto;  
+    
+}
+
+button, input, textarea {
+    transition: all 0.3s ease;
+}
+
+.caixa1 form p{
+    color: #FF9C38;
+    font-size: 30px;
+}
+.caixa1 input{
+    height:50px;
+    width:300px;
+    border-radius: 8px;
+    justify-content: space-between;
+    margin: 10px;
+    outline: none;
+    text-indent:10px;
+}
+
+.caixa1 input:focus{
+    border-color:#FF9C38;
+    box-shadow: 0 0 5px #FF9C38;
+}
+
+.caixa1 button{
+    background-color:#FCA315;
+    width:300px;
+    height: 50px;
+    border-radius: 8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: #FFFFFF;
+    font-size: 20px;
+    
+    
+}
+.caixa1 button:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+.caixa1 textarea{
+    height: 150px;
+    border-radius: 8px;
+    margin:10px;
+    width:300px;
+    outline: none;
+    text-indent:10px;
+}
+
+.caixa1 textarea:focus{
+    border-color:#FF9C38;
+    box-shadow: 0 0 5px #FF9C38;
+}
+.meio h1 {
+    font-size: 40px;
+    margin-bottom: 25px; 
+}
+
+.icon img{
+    width: 40px
+}
+.icon img, .paragrafo{
+    display: inline-block;
+    vertical-align: middle;
+}
+.meio p {
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.missao{    
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-between;  
+    background: #FFFFFF;
+    width: 100vw;
+    min-height: 600px;
+    border-top:  solid #152634;   
+        
+}
+
+
+.missao div{
+    font-size: 18px;
+    line-height: 1.5; 
+    text-align:left;
+}
+
+.missao .textos h2{
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+.missao .textos{    
+    margin-top: 70px;
+    width: 800px;
+    color: black;
+    margin-right: 150px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.textos .conta a{
+    color: black;
+}
+
+.textos .conta p{
+    margin-top: 80px;
+    font-size: 15px;      
+}
+
+footer{
+    background: #23232E;
+    color: #f8f9fa;
+    text-align: center;
+    padding:15px;    
+    bottom: 0;
+    width: 100vw;
+    border-top: 7px solid #152634;
+    
+}
+
+footer ul li{
+    list-style: none;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;  
+    gap: 16px;
+    width: 100%;  
+    max-width: 1200px; 
+    margin: 0 auto; 
+    
+}
+
+.red {
+    padding: 10px; 
+    flex: 1 1 200px;  /* Permite que a div se redimensione de forma flexível */
+    height: 350px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.red img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease
+}
+
+.red img:hover{
+    transform: scale(1.1);
+    
+}
+.orange {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px; 
+    padding: 10px;
+}
+
+#desenvolvimento{
+    font-size: 25px;
+}
+
+.orange .text{
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 1.9;
+
+}
+
+#devW{
+    background-color: #FF9C12;
+}
+
+.botons button{
+    
+    border-radius: 5px;
+    padding: 10px;
+    color: #565E64;
+    width: 250px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 20PX ;
+    font-family: poppins;
+}
+
+.botons button:hover{
+    background: #FFD08A;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.botons button hr{
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .meio {
+        margin-top: 10px; 
+    }
+
+    .container {
+        flex-direction: column;  
+        align-items: center;  
+    }
+
+    .red, .orange {
+        width: 90%;  
+        height: auto; 
+    }
+
+    .red img {
+        width: 100%;  
+    }
+
+    .meio p {
+        font-size: 15px;
+        padding: 10px;
+    
+    }
+    .meio h1{
+        font-size: 20px;
+
+    }
+    .missao {
+        display: flex;
+        flex-direction: column;        
+        align-items: center;    /* Centraliza horizontalmente */
+        gap: 20px;      
+        height: auto; 
+        width:100%;
+        
+    }
+
+    .textos h1  {
+        display: none;
+    }
+
+    
+        .textos .conta p{
+            margin-top: 40px;
+            font-size: 10px;      
+        }
+    
+
+
+    .missao .textos{    
+        margin-top: 7px;
+        width: 450px;
+    
+    }
+
+    .missao div{
+        font-size: 13px;
+        line-height: 1.5; 
+        text-align:left;
+    }
+    
+    .missao .textos h2{
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+
+    .icon img{
+        width: 25px
+    }
+
+.caixa1{
+    width:100%;
+
+}
+
+
+
+.caixa1 form{
+    width: 200px;
+    background: #FFFFFF;
+    height: auto;
+    border-top:  solid #152634;     
+    margin-top: 1px;
+    margin-left: 100px;
+    
+    
+}
+
+.caixa1 input{
+    height:25px;
+    width:100%;
+    border-radius: 4px;
+    justify-content: space-between;
+    margin: 5px;
+    outline: none;
+}
+
+.caixa1 textarea{
+    height: 75px;
+    border-radius: 4px;
+    margin:5px;
+    width:100%;
+    outline: none;
+}
+
+
+
+footer{
+    
+    padding:7px;    
+    bottom: 0;
+    width: 100%;
+    
+    
+}
+    
+.caixa1 button{    
+    width:100%;
+    height: 25px;
+    border-radius: 4px;    
+    font-size: 10px;
+    
+    
+}
+
+
+.botons button {
+    width: 100%; 
+    font-size: 18px; 
+    padding: 12px; 
+    margin-bottom: 15px; 
+}
+
+
+
+
+}
+
+
+/* Responsividade para telas de até 480px (smartphones pequenos) */
+@media screen and (max-width: 480px) {
+    .meio {
+        padding: 10px;
+    }
+
+    header nav {
+        position: relative;
+    }
+
+    .caixa1 form {
+        width: 100%; 
+        margin: 20px auto; 
+        padding: 15px; 
+    }
+
+    .caixa1 input,
+    .caixa1 textarea,
+    .caixa1 button {
+        width: 100%; 
+        font-size: 16px; 
+    }
+
+    .caixa1 p {
+        font-size: 24px; 
+        text-align: center;
+    }
+
+    .missao {
+        flex-direction: column; 
+        padding: 10px;
+        min-height: auto; 
+    }
+
+    .missao .textos {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 14px; 
+        padding: 10px; 
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px; 
+        font-size: 12px; 
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .red, .orange {
+    flex: 1 1 100%;
+    height: auto;
+    }
+
+    .red img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .botons button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px; 
+    }
+
+    .meio h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .meio p {
+        font-size: 16px; 
+    }
+}
