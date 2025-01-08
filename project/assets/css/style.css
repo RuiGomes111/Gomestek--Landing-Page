@@ -4,9 +4,13 @@
     box-sizing: border-box;
     
 }
-html {
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
     scroll-behavior: smooth;
-    overflow-x:hidden;
 }
 #serv {
     border: 1.2px solid white;
@@ -73,7 +77,7 @@ nav {
     -webkit-backdrop-filter: blur(10px); /* Suporte para Webkit */
     height: 8vh;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     
 }
 
